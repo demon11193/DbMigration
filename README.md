@@ -8,6 +8,7 @@ $dbh = new PDO(
     'root',
     'SECRET_PASSWORD'
 );
+
 $db = pg_connect('CONNECTED_STRING');
 
 $tables = [
@@ -18,7 +19,9 @@ $tables = [
 ];
 
 $source = new MySQLSource($tables, $dbh);
+
 $receiver = new PGSQLReceiver($db, 'qmsdb');
 
 $migrator = new SQLMigrator($source, $receiver);
+
 $migrator->migrate();
