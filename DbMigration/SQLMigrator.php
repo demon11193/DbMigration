@@ -1,6 +1,6 @@
 <?php
 
-namespace Vladlink\DbMigration;
+namespace MyTools\DbMigration;
 
 /**
  * Description of MySqlMigrator

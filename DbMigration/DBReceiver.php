@@ -1,5 +1,5 @@
 <?php
-namespace Vladlink\DbMigration;
+namespace MyTools\DbMigration;
 
 /**
  *
